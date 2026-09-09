@@ -41,7 +41,7 @@ export default function App() {
     const text = productName
       ? `Hi CraftWave Studio, I am interested in ordering the ${productName}.`
       : `Hi CraftWave Studio, I would like to make an inquiry.`;
-    window.open(`https://wa.me/919876543210?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/919650022810?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   return (

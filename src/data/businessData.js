@@ -2,12 +2,12 @@ export const BUSINESS_INFO = {
   name: "CraftWave Studio",
   tagline: "Elevate Your Desk Setup to Masterpiece Level",
   description: "CraftWave Studio produces custom artisan wrist rests, coiled cables, and premium desk mats built to enhance ergonomic support and aesthetic elegance.",
-  whatsappNumber: "919876543210", // Format: Country code + phone number (no plus or spaces)
-  location: "Bengaluru, Karnataka, India",
+  whatsappNumber: "919650022810", // Format: Country code + phone number (no plus or spaces)
+  location: "Janakpuri, New Delhi, India",
   openingHours: "Monday to Saturday: 10:00 AM - 7:00 PM IST (Closed Sundays)",
   deliveryInfo: "Standard shipping takes 3-5 business days across India. Custom engraved orders take 5-7 business days for production.",
   returnPolicy: "7-day hassle-free replacement policy for manufacturing defects.",
-  
+
   products: [
     {
       id: "prod-1",
@@ -73,11 +73,11 @@ BUSINESS INFORMATION:
 
 PRODUCTS & CATALOG:
 ${BUSINESS_INFO.products
-  .map(
-    (p) =>
-      `* ${p.name} (${p.category}): Price${p.price} | Status: ${p.availability} \vert{} Details:${p.description}`
-  )
-  .join("\n")}
+      .map(
+        (p) =>
+          `* ${p.name} (${p.category}): Price${p.price} | Status: ${p.availability} \vert{} Details:${p.description}`
+      )
+      .join("\n")}
 
 FREQUENTLY ASKED QUESTIONS:
 ${BUSINESS_INFO.faqs.map((f) => `Q: ${f.q}\nA:${f.a}`).join("\n")}

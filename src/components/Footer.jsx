@@ -25,7 +25,7 @@ export default function Footer() {
           <h4 className="footer-title">Contact</h4>
           <ul className="footer-links">
             <li><a href="#contact">Send Query</a></li>
-            <li><a href="https://wa.me/919876543210" target="_blank" rel="noreferrer">Direct WhatsApp</a></li>
+            <li><a href="https://wa.me/919650022810" target="_blank" rel="noreferrer">Direct WhatsApp</a></li>
           </ul>
         </div>
       </div>

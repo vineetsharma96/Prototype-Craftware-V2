@@ -1,41 +1,18 @@
-✨ MODERN ANIMATED FRONTEND WEBSITE
+# CraftWave Studio - Frontend & AI Integration Portfolio
 
-Interactive Web Experience with Smooth Animations, AI Assistant & WhatsApp Integration
-
----
-
-📌 About the Project
-
-A modern frontend website focused on creating a more engaging user experience through smooth text and image animations, responsive design, an AI chat assistant, and direct WhatsApp communication.
-
-✨ Features
-
-- 🎨 Modern responsive UI
-- ✨ Smooth text animations
-- 🖼️ Animated image transitions
-- 🤖 AI chat assistant
-- 💬 Direct WhatsApp messaging
-- 📱 Responsive design
-- ⚡ Interactive user experience
-
-🛠️ Technologies Used
-
-- HTML
-- CSS
-- JavaScript
-- Animation & Transition Effects
-- AI API / AI Integration
-- WhatsApp Integration
-
-🎯 Project Objective
-
-This project was created to improve frontend development skills, particularly in UI/UX design, animations, responsive layouts, and AI integration.
+A modern, responsive business website integrated with a grounded AI customer support widget powered by **Google Gemini 2.5 Flash-Lite**.
 
 ---
 
-👨‍💻 Project Status
+## 🌟 Key Features
 
-Completed — Student Project
+1. **Grounded AI Knowledge Base**: Answers questions regarding products, pricing, and shipping strictly using `src/data/businessData.js`.
+2. **Dual-Layer Architecture**:
+   - **Production (Vercel)**: Calls `/api/chat.js` serverless route to protect Gemini API keys.
+   - **Development**: Client-side fallback using `.env` for quick local setup.
+3. **WhatsApp Handoff**: If the AI encounters missing data or an API error, it generates a pre-formatted `https://wa.me/` link containing the conversation context.
+4. **Responsive Floating UI**: Custom CSS matching the website's dark slate palette (`#0f172a`, `#1e293b`, `#3b82f6`).
+
 ---
 
 ## 🚀 Environment Setup
