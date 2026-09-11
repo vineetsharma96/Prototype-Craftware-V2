@@ -24,14 +24,14 @@ export function AIAssistantModal({ isOpen, onClose, children }) {
       {/* Darkened Backdrop */}
       <div
         onClick={onClose}
-        className={`fixed inset-0 bg-slate-900/40 backdrop-blur-xs transition-opacity duration-300 ease-out ${
+        className={`fixed inset-0 bg-slate-950/60 backdrop-blur-sm transition-opacity duration-300 ease-out ${
           animateIn ? 'opacity-100' : 'opacity-0'
         }`}
       />
 
       {/* Modal Container */}
       <div
-        className={`relative w-full max-w-lg bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden z-10 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+        className={`relative w-full max-w-lg bg-white dark:bg-slate-900 text-slate-900 dark:text-white rounded-3xl shadow-2xl border border-slate-200/80 dark:border-slate-800 overflow-hidden z-10 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${
           animateIn
             ? 'opacity-100 translate-y-0 scale-100'
             : 'opacity-0 translate-y-4 scale-[0.97]'

@@ -1,0 +1,6 @@
+{
+  "name": "CraftWave Studio",
+  "description": "High-performance mechanical keyboards, Hall-effect magnetic switches, 40Gbps Thunderbolt hubs, and workstation hardware.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

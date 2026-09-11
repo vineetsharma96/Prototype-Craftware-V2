@@ -1,6 +1,6 @@
 import { buildSystemInstruction } from '../data/businessData';
 
-const MODEL = import.meta.env.VITE_GEMINI_MODEL || 'gemini-2.5-flash-lite';
+const MODEL = import.meta.env.VITE_GEMINI_MODEL || 'gemini-3.1-flash-lite';
 
 /**
  * Formats app message state array into Gemini's expected multi-turn contents payload

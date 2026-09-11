@@ -107,7 +107,7 @@ export default function AIChat() {
               </div>
               <div>
                 <div className="ai-header-title">{BUSINESS_INFO.name} Support</div>
-                <div className="ai-header-subtitle">Powered by Gemini 2.5</div>
+                <div className="ai-header-subtitle">Powered by Gemini AI</div>
               </div>
             </div>
             <div className="ai-header-actions">

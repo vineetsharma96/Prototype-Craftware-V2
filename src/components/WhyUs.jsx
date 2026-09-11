@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function WhyUs() {
   const highlights = [
-    { title: 'Zero Mass Production', text: 'Each item is hand-finished individually to maintain high structural integrity.' },
-    { title: 'Direct WhatsApp Line', text: 'No chatbots. Communicate directly with the artisan making your accessories.' },
-    { title: 'Tailored Customization', text: 'Need a custom size or timber species? We accept direct personalized requests.' }
+    { title: 'Zero Bloatware or Telemetry', text: 'Firmware runs entirely local on open-source QMK/VIA stored in EEPROM memory.' },
+    { title: 'Direct Engineer Line', text: 'No chatbots. Communicate directly with the hardware engineer tuning your rig.' },
+    { title: 'Custom Switch & Actuation Tuning', text: 'Need a specific actuation depth or switch lubing? We calibrate every build.' }
   ];
 
   return (

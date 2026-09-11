@@ -1,11 +1,20 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-/* Custom Global Motion Utilities */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Custom Global Motion & Theme Utilities */
 :root {
   --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+  color-scheme: light;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+/* Smooth theme transitions on key structural elements */
+body {
+  transition: background-color 300ms ease, color 300ms ease;
 }
 
 @keyframes subtleFloat {
@@ -22,7 +31,21 @@
 }
 
 .will-change-transform-opacity {
-  will-change: transform, opacity;
+  will-change: transform, opacity, filter;
+}
+
+/* Scroll blur pop transition utility classes */
+.scroll-blur-enter {
+  opacity: 0;
+  filter: blur(14px);
+  transform: translateY(28px) scale(0.97);
+  transition: opacity 800ms var(--ease-premium), filter 800ms var(--ease-premium), transform 800ms var(--ease-premium);
+}
+
+.scroll-blur-visible {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(0) scale(1);
 }
 
 /* Accessibility: Reduced Motion */

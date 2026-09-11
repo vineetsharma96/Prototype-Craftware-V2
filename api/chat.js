@@ -18,7 +18,7 @@ export default async function handler(req, res) {
   }
 
   const { contents, systemInstruction, model } = req.body;
-  const selectedModel = model || 'gemini-2.5-flash-lite';
+  const selectedModel = model || process.env.VITE_GEMINI_MODEL || 'gemini-3.1-flash-lite';
 
   try {
     const response = await fetch(
